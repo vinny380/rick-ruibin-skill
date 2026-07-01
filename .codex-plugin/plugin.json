@@ -1,0 +1,33 @@
+{
+  "name": "taste-check",
+  "version": "1.0.0",
+  "description": "A Rick Rubin-inspired taste check for code, UI, copy, product scope, names, and launch ideas.",
+  "author": {
+    "name": "Rick Rubin Skill contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "review",
+    "taste",
+    "design",
+    "product"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Rick Rubin",
+    "shortDescription": "Taste-check work before it ships",
+    "longDescription": "Adds a concise taste review pass for work that is technically correct but may be flat, crowded, or overbuilt.",
+    "developerName": "Rick Rubin Skill contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Review",
+      "Writing",
+      "Design"
+    ],
+    "defaultPrompt": "Use $rick-rubin to judge whether this work is alive, overbuilt, or merely correct.",
+    "brandColor": "#111111",
+    "composerIcon": "./skills/rick-rubin/assets/rick-rubin-intuition.png",
+    "logo": "./skills/rick-rubin/assets/rick-rubin-intuition.png"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "rick-rubin-skills",
+  "owner": {
+    "name": "Rick Rubin Skill contributors"
+  },
+  "description": "A small marketplace for taste-led AI review skills.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "taste-check",
+      "displayName": "Rick Rubin",
+      "source": "./",
+      "description": "Adds a Rick Rubin-inspired taste check for code, UI, copy, product scope, names, and launch ideas.",
+      "author": {
+        "name": "Rick Rubin Skill contributors"
+      },
+      "category": "productivity",
+      "tags": [
+        "skills",
+        "review",
+        "taste",
+        "design",
+        "product"
+      ]
+    }
+  ]
+}
