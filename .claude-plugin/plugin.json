@@ -1,0 +1,9 @@
+{
+  "name": "taste-check",
+  "description": "A Rick Rubin-inspired taste check for code, UI, copy, product scope, names, and launch ideas.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rick Rubin Skill contributors"
+  },
+  "license": "MIT"
+}

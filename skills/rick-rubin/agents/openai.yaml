@@ -1,0 +1,10 @@
+interface:
+  display_name: "Rick Rubin"
+  short_description: "Taste-check work before it ships"
+  icon_small: "./assets/rick-rubin-intuition.png"
+  icon_large: "./assets/rick-rubin-intuition.png"
+  brand_color: "#111111"
+  default_prompt: "Use $rick-rubin to judge whether this work is alive, overbuilt, or merely correct."
+
+policy:
+  allow_implicit_invocation: false
