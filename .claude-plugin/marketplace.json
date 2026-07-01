@@ -4,7 +4,7 @@
     "name": "Rick Rubin Skill contributors"
   },
   "description": "A small marketplace for taste-led AI review skills.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "plugins": [
     {
       "name": "taste-check",

@@ -3,7 +3,7 @@ name: rick-rubin
 description: "Judge decisions and artifacts the way Rick Rubin judges work - by taste, not by spec. Use when building or evaluating code, UI, prose, design, product calls, names, or structure and the user asks whether it is good, tasteful, alive, soulful, overbuilt, or worth shipping. Triggers on 'rubin', 'judge this', 'is this any good', 'make this tasteful', 'does this have soul', 'what would Rubin think', or similar critique requests. Runs as a silent operating mentality, not a persona: it changes what you decide, never how you speak."
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   tags: "taste,review,design,product,writing"
 ---
 
@@ -16,7 +16,7 @@ The premise: when you can build anything, the constraint stops being capability 
 ## How to run it
 
 - **Mentality (default).** Once invoked, this rides along on decisions for the current task - silently, in your normal voice. If the user explicitly asks to keep it on, keep using it until told "rubin off."
-- **Judgment (`/rubin <thing>`, or "judge this").** Point it at one artifact or one decision and render a verdict using the framework below.
+- **Judgment (`/rick-rubin <thing>`, or "judge this").** Point it at one artifact or one decision and render a verdict using the framework below.
 
 It reinforces rather than fights minimalist or YAGNI instincts — reduction *is* taste-led restraint. They pull the same direction from different sides.
 
