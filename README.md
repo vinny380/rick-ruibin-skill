@@ -22,41 +22,44 @@ A taste check.
 
 ## Use It
 
-For the open Agent Skills ecosystem:
+Install as an Agent Skill:
 
 ```bash
-npx skills add <owner>/<repo>
+npx skills add vinny380/rick-ruibin-skill --skill rick-rubin
 ```
 
-For Codex local development:
+Install with GitHub CLI:
 
 ```bash
-mkdir -p ~/.codex/skills
-ln -s "$(pwd)/skills/rick-rubin" ~/.codex/skills/rick-rubin
+gh skill install vinny380/rick-ruibin-skill
 ```
 
-For Claude Code local development:
+Install as a Codex plugin:
+
+```bash
+codex plugin marketplace add vinny380/rick-ruibin-skill
+codex plugin add taste-check@rick-rubin-skills
+```
+
+Install as a Claude Code marketplace plugin:
+
+```text
+/plugin marketplace add vinny380/rick-ruibin-skill
+/plugin install taste-check@rick-rubin-skills
+```
+
+Use it:
+
+```text
+Claude direct skill install: /rick-rubin judge this landing page copy.
+Claude marketplace install: /taste-check:rick-rubin judge this landing page copy.
+Codex: Use $rick-rubin to judge this landing page copy.
+```
+
+For local plugin development:
 
 ```bash
 claude --plugin-dir .
-```
-
-Then ask for the pass:
-
-```text
-/rick-rubin judge this landing page copy.
-```
-
-In Codex, mention the skill with `$`:
-
-```text
-Use $rick-rubin to judge this landing page copy.
-```
-
-In Claude Code marketplace installs, plugin skills are namespaced:
-
-```text
-/taste-check:rick-rubin
 ```
 
 ## Marketplace Shape
@@ -68,6 +71,28 @@ This repo is arranged for three paths with one canonical skill file:
 - `.agents/plugins/marketplace.json` plus `.codex-plugin/plugin.json` for Codex plugin marketplace distribution
 
 Claude and Codex install the repo root as the `taste-check` plugin package. The skill itself lives once, under `skills/rick-rubin/`.
+
+## Published Status
+
+Published release:
+
+```text
+v1.0.1
+https://github.com/vinny380/rick-ruibin-skill/releases/tag/v1.0.1
+```
+
+This is installable today through:
+
+- GitHub Agent Skills: `gh skill install vinny380/rick-ruibin-skill`
+- skills.sh / open Agent Skills: `npx skills add vinny380/rick-ruibin-skill --skill rick-rubin`
+- Codex self-hosted marketplace: `taste-check@rick-rubin-skills`
+- Claude Code self-hosted marketplace: `taste-check@rick-rubin-skills`
+
+This is not yet listed in the curated/global Claude or Codex directories. Those are separate curation surfaces. For Claude's community marketplace, submit the plugin here:
+
+```text
+https://platform.claude.com/plugins/submit
+```
 
 ## The Point
 
@@ -144,42 +169,33 @@ One change: make the first version a daily operator brief:
 
 More demos live in [examples](./examples).
 
-## Publish
+## Distribution Notes
 
-Once the repo is public:
+For the shorter Claude command:
 
 ```bash
-npx skills add <owner>/<repo>
+npx skills add vinny380/rick-ruibin-skill -a claude-code --skill rick-rubin
 ```
 
-That makes skills.sh see the repo after CLI telemetry updates.
-
-For Claude Code:
+Then invoke:
 
 ```text
-/plugin marketplace add <owner>/<repo>
-/plugin install taste-check@rick-rubin-skills
+/rick-rubin
 ```
 
-Marketplace installs invoke the skill as:
+For Claude marketplace installs, plugin skills are namespaced by design:
 
 ```text
 /taste-check:rick-rubin
 ```
 
-For the shorter `/rick-rubin` command, install the skill directly instead:
+For Codex marketplace installs:
 
-```bash
-npx skills add <owner>/<repo> -a claude-code
+```text
+$rick-rubin
 ```
 
-For Codex:
-
-```bash
-codex plugin marketplace add <owner>/<repo>
-```
-
-Then install `taste-check` from the `Rick Rubin Skills` marketplace.
+skills.sh and GitHub skill search may take time to index new public releases. Direct install works immediately.
 
 ## Launch Copy
 
